@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>l'Aplication</title>
+
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link href="css/prettyPhoto.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet" />
+
+</head>
+
+<body>
+  <header>
+   
+            <div class="navbar-brand">
+              <a href="index.html"><h1><span>L'Aplication </span>Gestion <br> Etudiant</h1></a>
+            </div>
+          </div>
+
+          <div class="navbar-collapse collapse">
+            <div class="menu">
+              <ul class="nav nav-tabs" role="tablist">
+                <li role="presentation"><a href="index.html" class="active">Acceuil</a></li>
+                <li role="presentation"><a href="ajout.php">Ajouter</a></li>
+                <li role="presentation"><a href="Afficherresultat.php">Lister un  etudiant</a></li>
+                <li role="presentation"><a href="LISTER.php">Lister tous les etudiants</a></li>
+                <li role="presentation"><a href="statut.php">lister par catégorie</a></li>
+              
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <section id="main-slider" class="no-margin">
+    <div class="carousel slide">
+      <div class="carousel-inner">
+        <div class="item active" style="background-image: url(images/slider/fon.jpeg)">
+          <div class="container">
+            
+              <div class="col-sm-6">
+                <div class="carousel-content">
+                  <h2 class="animation animated-item-1">Bienvenu<span>A L'Aplication </span></h2>
+                  <p class="animation animated-item-2">Gestion <br> Etudiant</p>
+
+                </div>
+              </div>
+
+              <div class="col-sm-6 hidden-xs animation animated-item-4">
+                <form action="Service.php" method="POST">
+                  <div>
+                  <label for="Nom"></label>
+                  <input type="text" class="form-control" name="Matricule"   placeholder="Matricule">
+                </div>
+                <div>
+                  <label for="Nom"></label>
+                  <input type="Nom" id="Nom" class="form-control" name="Nom"  placeholder="Nom">
+                </div>
+                <div>
+                  <label for="Prenom" ></label>
+                  <input type="text" id="Prenom" class="form-control" name="Prenom" placeholder="Prenom">
+                </div>
+                <div>
+                  <label for="Tel"></label>
+                  <input type="" id="Tel" class="form-control" name="Tel" placeholder="Tel">
+                </div><div>
+                  <label for="Email"></label>
+                  <input type="text" id="Email" class="form-control" name="Email" placeholder="Email">
+                </div>
+                <div>
+                  <label for="datenaissance"></label>
+                  <input type="date" id="datenaissance"class="form-control" name="datenaissance" placeholder="Date De Naissance">
+                </div>
+                <div>
+                    <br>
+                    <select id="typeEtudiant"  class="form-control" placeholder="libeller">
+                      <option value="" >Type d'etudiant</option>
+                      <option value="NB">Non boursier</option>
+                      <option value="B">Boursier</option>
+                      <option value="L">Logé</option>
+                    </select>
+                  </div>
+                <div>
+                  <label for="Adresse"></label>
+                  <input type="text" id="Adresse" class="form-control" name="Adresse" placeholder="Adresse">
+                </div>
+                <div>
+                    <label for="libeller"></label>
+                    <select name="libeler" id="libeler"  id="bourse" class="form-control" placeholder="libeller">
+                      <option value="" >Type de bourse</option>
+                      <option value="">demi_bourse</option>
+                      <option value="">bouse_entier</option>
+                    </select>
+                <div>
+                  <label for="N-chambre" disabled></label>
+                  <input type="Numéro" id="type" class="form-control" name="N-chambre" placeholder="N-chambre  ">
+                </div>
+                <button type="submit" class="btn btn-danger" disabled> Ajouter</button>
+              </form>
+                
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <!--/.item-->
+      </div>
+      <!--/.carousel-inner-->
+    </div>
+    <!--/.carousel-->
+  </section>
+  <!--/#main-slider-->
+
+  <div class="feature">
+    <div class="container">
+      <div class="text-center">
+        <div class="col-md-3">
+          <div class="hi-icon-wrap hi-icon-effect wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
+            <i class="fa fa-laptop"></i>
+            <h2> <a href="ajout.php">Add</a></h2>
+            <p style="font-size: 20px"> Ce lien ADD vous permet d'ajouter un étudiant dans la base de données</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="hi-icon-wrap hi-icon-effect wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+            <i class="fa fa-laptop"></i>
+            <h2> <a href="Afficherresultat.php">find</a></h2>
+            <p style="font-size: 20px"> Ce lien FIND vous serve à retrouver un étudiant de la base de données</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="hi-icon-wrap hi-icon-effect wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="900ms">
+            <i class="fa fa-laptop"></i>
+            <h2> <a href="LISTER.php">finAall</a></h2>
+            <p style="font-size: 20px">Clique sur ce lien FINDALL POUR lister tous les etudiants de la basse de données</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="hi-icon-wrap hi-icon-effect wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="1200ms">
+            <i class="fa fa-laptop"></i>
+            <h2><a href="statut.php">checkStatut</a></h2>
+            <p style="font-size: 20px"> Ce lien CHECKSTAUT vous permet de savoir l'statut de l'étudiant : s'il est un étudiant boursié,logé ou non logé.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer">
+      <div class="container">
+        <div class="social-icon">
+          <div class="col-md-4">
+            <ul class="social-network">
+              <li><a href="#" class="fb tool-tip" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="#" class="twitter tool-tip" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="#" class="gplus tool-tip" title="Google Plus"><i class="fa fa-google-plus"></i></a></li>
+              <li><a href="#" class="linkedin tool-tip" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+              <li><a href="#" class="ytube tool-tip" title="You Tube"><i class="fa fa-youtube-play"></i></a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-md-offset-4">
+          <div class="copyright">
+            &copy; l'aplication gestion Etudiant .
+            <div class="credits"> 
+              Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="pull-right">
+        <a href="#home" class="scrollup"><i class="fa fa-angle-up fa-3x"></i></a>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.prettyPhoto.js"></script>
+  <script src="js/jquery.isotope.min.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script src="js/functions.js"></script>
+
+</body>
+
+</html>
